@@ -4,6 +4,7 @@ import sys
 r2 = r2pipe.open()
 file = open('win32u_syscalls.json', 'w')
 
+r2.cmd('aaa')
 num_syscalls = r2.cmd('aflc')
 firstline = '{{\"number of syscalls\":\"{}\", \"syscall entries\":[\r\n'.format(
     num_syscalls.rstrip())
