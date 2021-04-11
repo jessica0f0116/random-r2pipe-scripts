@@ -17,7 +17,7 @@ for addr in addrs:
     syscallname = r2.cmdj("afij @ {}".format(hexaddr))[0]['name'][15:]
     if syscallnum == 'cccc':
         continue
-    jsonline = '{{\"syscall name":\"{}\", \"syscall number\":0x{}}},\r\n'.format(
+    jsonline = '{{\"syscall name":\"{}\", \"syscall number\":\"0x{}\"}},\r\n'.format(
         syscallname, syscallnum)
     file.write(jsonline)
 file.write(']}')
