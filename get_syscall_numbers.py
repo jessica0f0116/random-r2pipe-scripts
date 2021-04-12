@@ -21,3 +21,4 @@ for addr in addrs:
         syscallname, syscallnum)
     file.write(jsonline)
 file.write(']}')
+file.close()
