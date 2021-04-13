@@ -1,4 +1,5 @@
 #get apisetschema default mapping from apisetschema.dll... hacky
+#example output https://gist.github.com/jessica0f0116/b9fe66bf584e2e47a5133a8b7d8f38c2
 import r2pipe
 import sys
 import subprocess
