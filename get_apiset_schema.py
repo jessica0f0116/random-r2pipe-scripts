@@ -1,5 +1,5 @@
 #get apisetschema default mapping from apisetschema.dll... hacky
-#example output https://gist.github.com/jessica0f0116/b9fe66bf584e2e47a5133a8b7d8f38c2
+#example output https://gist.github.com/jessica0f0116/3b49ca4388a71b87f64883c87e0ecf54
 import r2pipe
 import sys
 import subprocess
@@ -48,7 +48,7 @@ def get_namespace_entries(apisetaddr, nsoffs):
             if len(hostname) >= 2:
                 hostname = hostname[numhosts - 1] + ".dll"
             else:
-                hostname = hostname[numhosts - 1]
+                hostname = apiname
                 #nice c snippet to resolve api set
                 #https://gist.github.com/lucasg/9aa464b95b4b7344cb0cddbdb4214b25
                 result = subprocess.run(['apisetlookup.exe', hostname], stdout=subprocess.PIPE)
